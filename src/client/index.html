@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serverless chat application using peer to peer WebRTC">
+  <meta name="keywords" content="HTML5, Webpack, CSS3, XML, XHTML, JavaScript, ES6, EcmaScript6">
+  <meta name="author" content="Seth Bergman">
+  <meta name="copyright" content="Seth Bergman" />
+  <title>webcomponents-webpack-es6</title>
+  <link rel="shortcut icon" href="/images/favicon.ico">
+
+  <% for (var css in htmlWebpackPlugin.files.chunks['application'].css) { %>
+    <link href="<%= htmlWebpackPlugin.files.chunks['application'].css[css] %>" rel="stylesheet">
+  <% } %>
+</head>
+
+<body>
+  <hello-world id="h2" name="Seth"></hello-world>
+  <hello-world who="Unicorn"></hello-world>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks['vendor'].entry %>"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks['application'].entry %>"></script>
+</body>
+
+</html>

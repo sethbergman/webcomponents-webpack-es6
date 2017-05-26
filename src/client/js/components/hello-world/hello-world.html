@@ -1,0 +1,13 @@
+<h1>Hello<span id="who"></span>!</h1>
+<dom-module id="hello-world">
+  <template>
+    <h1>Hello<span id="name"></span>!</h1>
+    <input type="text" value="{{name::keyup}}">
+    <h2>Hello, [[name]]</h2>
+  </template>
+  <script>
+  Polymer({
+    is: "hello-world"
+  })
+  </script>
+</dom-module>
