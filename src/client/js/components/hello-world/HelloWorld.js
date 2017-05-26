@@ -3,7 +3,7 @@ import { WebComponent } from "web-component";
 @WebComponent("hello-world", {
   template: require("./hello-world.html"),
   shadowDOM: true,
-  isPolymer: `<hello-world></hello-world>`
+  isPolymer: true
 })
 export default class HelloWorld extends HTMLElement {
   constructor() {
