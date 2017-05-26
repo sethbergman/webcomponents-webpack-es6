@@ -1,4 +1,6 @@
 # [Web Components](https://www.webcomponents.org/) project starter using ES6 and [Webpack](https://webpack.github.io/)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/webcomponents-webpack-es6.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/sethbergman/web-components-webpack-es6-boilerplate.svg?branch=master)](https://travis-ci.org/sethbergman/web-components-webpack-es6-boilerplate)
 [![codecov](https://codecov.io/gh/sethbergman/web-components-webpack-es6-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/sethbergman/web-components-webpack-es6-boilerplate)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE.txt)
