@@ -2,17 +2,19 @@ import { WebComponent } from "web-component";
 
 @WebComponent("hello-world", {
   template: require("./hello-world.html"),
-  shadowDOM: true
+  shadowDOM: true,
+  isPolymer: `<hello-world></hello-world>`
 })
 export default class HelloWorld extends HTMLElement {
   constructor() {
     super();
-    this._who = 'h2'; //this property is bind to element attribute becouse of observedAttributes
+    this._who = '';
+    this._name = '';  //this property is bind to element attribute becouse of observedAttributes
   }
 
-  static get observedAttributes() {
-    return ["who"];
-  }
+  // static get observedAttributes() {
+  //   return ["who", "name"];
+  // }
 
   // Only called for the who attributes due to observedAttributes
   // attributeChangedCallback() {
@@ -22,8 +24,9 @@ export default class HelloWorld extends HTMLElement {
 
   connectedCallback() {
     //  this is handled by WebComponent decorator
-    if (this.hasAttribute('who')) {
+    if (this.hasAttribute('who' || 'name')) {
       this._who = this.getAttribute('who');
+      this._name = this.getAttribute('name');
     }
     this._updateRendering();
   }
@@ -31,8 +34,8 @@ export default class HelloWorld extends HTMLElement {
   // Decorator creates setter/getter methods for observed attributes
   //we do not have to do this
 
-  // get who() {
-  //   return this._who;
+  // get name() {
+  //   return this._name;
   // }
   //
   // set who(v) {
@@ -42,6 +45,7 @@ export default class HelloWorld extends HTMLElement {
   _updateRendering() {
     if (this.shadowRoot) {
       this.shadowRoot.querySelector("#who").textContent = `, ${this._who}`;
+      this.shadowRoot.querySelector("#name").textContent = `, ${this._name}`;
     }
   }
 }
