@@ -1,11 +1,14 @@
 # [Web Components](https://www.webcomponents.org/) project starter using ES6 and [Webpack](https://webpack.github.io/)
-[![Build Status](https://travis-ci.org/sethbergman/web-components-webpack-es6-boilerplate.svg?branch=master)](https://travis-ci.org/sethbergman/web-components-webpack-es6-boilerplate)
-[![codecov](https://codecov.io/gh/sethbergman/web-components-webpack-es6-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/sethbergman/web-components-webpack-es6-boilerplate)
+
+[![Build Status](https://travis-ci.org/sethbergman/webcomponents-webpack-es6.svg?branch=master)](https://travis-ci.org/sethbergman/webcomponents-webpack-es6)
+
+[![codecov](https://codecov.io/gh/sethbergman/webcomponents-webpack-es6/branch/master/graph/badge.svg)](https://codecov.io/gh/sethbergman/webcomponents-webpack-es6)
+
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE.txt)
 
 ## Project setup includes:
 
-- [x] [web-component](https://github.com/sethbergman/web-component)
+- [x] [web-component](https://github.com/sethbergman/webcomponents-webpack-es6)
 - [x] Server Rendering
 - [x] Webpack2
 - [x] Webpack Dashboard
@@ -25,22 +28,24 @@
 ## Installation
 
 ```sh
-$ git clone https://github.com/sethbergman/web-components-webpack-es6-boilerplate app-name
+$ git clone https://github.com/sethbergman/web-components-webpack-es6.git app-name
 $ cd app-name
 $ npm install
 ```
 
 ## Development
 
-* Build once for (ready for ***Production***):
-  * `$ npm run build`
-  * `$ npm run build:serve`
+- Build once for (ready for **_Production_**):
+
+  - `$ npm run build`
+  - `$ npm run build:serve`
 
   The last command will boot up HTTP server on `3003` port and serve `build/client` directory in a default browser
 
-* Hot reloading via webpack middlewares:
-  * `$ npm start`
-  * Point your browser to http://localhost:3000/, page hot reloads automatically when there are changes
+- Hot reloading via webpack middlewares:
+
+  - `$ npm start`
+  - Point your browser to <http://localhost:3000/>, page hot reloads automatically when there are changes
 
 ## Testing
 
