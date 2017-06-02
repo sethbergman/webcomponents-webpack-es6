@@ -28,7 +28,7 @@
 ## Installation
 
 ```sh
-$ git clone https://github.com/sethbergman/web-components-webpack-es6.git app-name
+$ git clone https://github.com/sethbergman/webcomponents-webpack-es6.git app-name
 $ cd app-name
 $ npm install
 ```
