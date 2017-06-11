@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <hello-world who="Unicorn"></hello-world>
+  <hello-world v-bind:who="something"who="Unicorn"></hello-world>
   <hello-name name="Seth"></hello-name>
 
   <script src="<%= htmlWebpackPlugin.files.chunks['vendor'].entry %>"></script>
