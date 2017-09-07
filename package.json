@@ -16,7 +16,9 @@
     "test:cov": "yarn test -- --coverage",
     "test:watch": "yarn test -- --watch",
     "lint": "eslint config src/** --ext .js",
-    "tunnel": "lt --port 3000"
+    "tunnel": "lt --port 3000",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Seth Bergman <hello@sethbergman.com>",
   "license": "MIT",
@@ -63,10 +65,12 @@
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0",
     "webpack-node-externals": "^1.5.4",
-    "workbox-sw": "^1.0.0"
+    "workbox-sw": "^1.0.0",
+    "snyk": "^1.40.2"
   },
   "repository": "https://github.com/sethbergman/webcomponents-webpack-es6.git",
   "devDependencies": {
     "workbox-webpack-plugin": "^1.0.0"
-  }
+  },
+  "snyk": true
 }

@@ -1,0 +1,37 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:qs:20170213':
+    - http-server > union > qs:
+        reason: None given
+        expires: '2017-10-07T17:03:02.420Z'
+  'npm:shelljs:20140723':
+    - eslint > shelljs:
+        reason: None given
+        expires: '2017-10-07T17:03:02.421Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20170412':
+    - webpack-dashboard > socket.io-client > engine.io-client > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io > socket.io-adapter > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io > socket.io-client > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io-client > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io > engine.io > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io > socket.io-client > engine.io-client > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io > socket.io-parser > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io-client > socket.io-parser > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
+    - webpack-dashboard > socket.io > socket.io-client > socket.io-parser > debug > ms:
+        patched: '2017-09-07T17:03:02.426Z'
