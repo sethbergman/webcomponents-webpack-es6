@@ -35,3 +35,26 @@ patch:
         patched: '2017-09-07T17:03:02.426Z'
     - webpack-dashboard > socket.io > socket.io-client > socket.io-parser > debug > ms:
         patched: '2017-09-07T17:03:02.426Z'
+  'npm:debug:20170905':
+    - webpack-dashboard > socket.io-client > engine.io-client > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io > socket.io-adapter > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io > socket.io-client > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io-client > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io > engine.io > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io > socket.io-client > engine.io-client > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io > socket.io-parser > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io-client > socket.io-parser > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2017-09-29T05:04:26.568Z'
+    - webpack-dashboard > socket.io > socket.io-client > socket.io-parser > debug:
+        patched: '2017-09-29T05:04:26.568Z'
